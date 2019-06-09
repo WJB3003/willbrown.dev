@@ -320,6 +320,7 @@ p{
   padding: 30px;
   margin-right: 25px;
   margin-top: 80px;
+  margin-bottom: 80px;
 }
 
 .card:hover{
