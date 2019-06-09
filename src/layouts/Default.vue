@@ -2,11 +2,11 @@
   <div class="layout">
     <div class="half-face-background">
       <header class="header">
-        <div id="home-icon"><img src="https://i.imgur.com/7g27Ft5.png" height="37px" width="37px"></div>
+        <div id="home-icon"><a href="#"><img src="https://i.imgur.com/7g27Ft5.png" height="37px" width="37px"></a></div>
         <nav class="nav">
-          <div class="nav-item">About</div>
-          <div class="nav-item">Work</div>
-          <div class="nav-item">Contact</div>
+          <div class="nav-item"><a href="#about">About</a></div>
+          <div class="nav-item"><a href="#work">Work</a></div>
+          <div class="nav-item"><a href="#contact">Contact</a></div>
         </nav>
       </header>
       
@@ -16,7 +16,7 @@
         <h2 id="occupation">Software Developer</h2>
       </div>
 
-      <div class="panel about">
+      <div class="panel" id="about">
         <h1 class="about-title">ABOUT ME</h1>
         <div class="hl-about"></div>
         <div class="about-container">
@@ -34,7 +34,7 @@
       </div>
     </div>
 
-    <div class="panel work">
+    <div class="panel" id="work">
       <div id="work-title">WORK</div>
       <div class="hl-work"></div>
 
@@ -43,8 +43,7 @@
           <div class="card-top">
             <div class="project-icon"><b></></b></div>
             <div class="link">
-              <div class="project-github"><img src="https://i.imgur.com/5Br69Fw.png" height="20px" width="20px"></div>
-              <div class="project-link"><img src="https://i.imgur.com/65dfFeA.png" height="20px" width="20px"></div>
+              <div class="project-link"><a href="https://www.builtwithvue.com/" target="blank"><img src="https://i.imgur.com/65dfFeA.png" height="20px" width="20px"></a></div>
             </div>
           </div>
           <div class="card-bottom">
@@ -63,18 +62,16 @@
           <div class="card-top">
             <div class="project-icon"><b></></b></div>
             <div class="link">
-              <div class="project-github"><img src="https://i.imgur.com/5Br69Fw.png" height="20px" width="20px"></div>
-              <div class="project-link"><img src="https://i.imgur.com/65dfFeA.png" height="20px" width="20px"></div>
+              <div class="project-github"><a href="https://github.com/WJB3003/space-x" target="blank"><img src="https://i.imgur.com/5Br69Fw.png" height="20px" width="20px"></a></div>
             </div>
           </div>
           <div class="card-bottom">
             <div class="project-desc">
-              <div class="project-title">Built With Vue</div>
-              <div class="project-summary">Website that's let users showcase their work built in Vue.</div>
+              <div class="project-title">Space X Interface</div>
+              <div class="project-summary">Using the Space X RESTful API, I create a website that visualizes the data. WIP.</div>
             </div>
             <ul class="project-tech">
               <li class="project-skill">Vue</li>
-              <li class="project-skill">Google Sheets</li>
             </ul>
           </div>
         </div>
@@ -83,18 +80,19 @@
           <div class="card-top">
             <div class="project-icon"><b></></b></div>
             <div class="link">
-              <div class="project-github"><img src="https://i.imgur.com/5Br69Fw.png" height="20px" width="20px"></div>
-              <div class="project-link"><img src="https://i.imgur.com/65dfFeA.png" height="20px" width="20px"></div>
+              <div class="project-github"><a href="https://github.com/WJB3003/Remoteplay-Web" target="blank"><img src="https://i.imgur.com/5Br69Fw.png" height="20px" width="20px"></a></div>
             </div>
           </div>
           <div class="card-bottom">
             <div class="project-desc">
-              <div class="project-title">Built With Vue</div>
-              <div class="project-summary">Website that's let users showcase their work built in Vue.</div>
+              <div class="project-title">Remote Play</div>
+              <div class="project-summary">Web application that combines game logic of Card Against Humanity and the style of JackBox Games into a fun party game. WIP.</div>
             </div>
             <ul class="project-tech">
               <li class="project-skill">Vue</li>
-              <li class="project-skill">Google Sheets</li>
+              <li class="project-skill">Java</li>
+              <li class="project-skill">Spring Boot</li>
+              <li class="project-skill">REST</li>
             </ul>
           </div>
         </div>
@@ -102,21 +100,20 @@
       </div>
     </div>
 
-    <div class="panel contact">
+    <div class="panel" id="contact">
       <p class="contact-desc">currently looking for<br>job opportunies and<br>to grow my network.</p>
       <div class="vl"></div>
       <div class="contact-item-container">
         <div class="contact-item email">
-          <img class="icons" src='https://i.imgur.com/MKQvbcG.png' height="35px" width="35px">
+          <a href="#contact"><img class="icons" src='https://i.imgur.com/MKQvbcG.png' height="35px" width="35px"></a>
           <div class="contact-item-text">me@willbrown.dev</div>
         </div>
-
         <div class="contact-item github">
-          <img class="icons" src='https://i.imgur.com/lZ4FvYt.png' height="35px" width="35px">
+          <a href="https://github.com/WJB3003" target="blank"><img class="icons" src='https://i.imgur.com/lZ4FvYt.png' height="35px" width="35px"></a>
           <div class="contact-item-text">/WJB3003</div>
         </div>
         <div class="contact-item linkedin">
-          <img class="icons" src='https://i.imgur.com/LFCErGR.png' height="35px" width="35px">
+          <a href="https://www.linkedin.com/in/williamjamesbrown/" target="blank"><img class="icons" src='https://i.imgur.com/LFCErGR.png' height="35px" width="35px"></a>
           <div class="contact-item-text">/williamjamesbrown</div>
         </div>
       </div>
@@ -179,7 +176,7 @@ body {
   padding-left: 3%;
 }
 
-.about{
+#about{
   background-color: #35495E;
   color: white;
   opacity: .9;
@@ -220,7 +217,7 @@ body {
   min-height: 73vh;
 }
 
-.work{
+#work{
   min-height: 100vh;
   background-color: #0A192F;
   color: white;
@@ -233,7 +230,7 @@ body {
   background-color: #35495E;
 }
 
-.contact{
+#contact{
   background-color: black;
   color: white;
   display: flex;
@@ -401,6 +398,13 @@ p{
 
 .four{
   margin-left: 16.5%;
+}
+
+a{
+  color: white;
+  text-decoration: none;
+  padding: 0px;
+  margin: 0px;
 }
 
 </style>
