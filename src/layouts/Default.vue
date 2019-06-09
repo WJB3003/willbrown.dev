@@ -21,7 +21,15 @@
         <div class="hl-about"></div>
         <div class="about-container">
           <p class="about-summary">Software Developer who is<br>passionately curious about the<br>unknowns of technology and<br>determined to continuously learn.<br>Critical thinker and problem solver<br>seeking to find the best and most<br>efficient solution for every problem.</p>
-          <div class="skill-wheel"></div>
+          <div class="skill-wheel">
+            <div class="skill one">Java</div>
+            <div class="skill two">Javascript</div>
+            <div class="skill three">Vue</div>
+            <div class="skill four">React</div>
+            <div class="skill three">Angular</div>
+            <div class="skill two">HTML</div>
+            <div class="skill one">CSS</div>
+          </div>
         </div>
       </div>
     </div>
@@ -29,15 +37,88 @@
     <div class="panel work">
       <div id="work-title">WORK</div>
       <div class="hl-work"></div>
+
+      <div class="cards">
+        <div class="card">
+          <div class="card-top">
+            <div class="project-icon"><b></></b></div>
+            <div class="link">
+              <div class="project-github"><img src="https://i.imgur.com/5Br69Fw.png" height="20px" width="20px"></div>
+              <div class="project-link"><img src="https://i.imgur.com/65dfFeA.png" height="20px" width="20px"></div>
+            </div>
+          </div>
+          <div class="card-bottom">
+            <div class="project-desc">
+              <div class="project-title">Built With Vue</div>
+              <div class="project-summary">Website that's let users showcase their work built in Vue.</div>
+            </div>
+            <ul class="project-tech">
+              <li class="project-skill">Vue</li>
+              <li class="project-skill">Google Sheets</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="card">
+          <div class="card-top">
+            <div class="project-icon"><b></></b></div>
+            <div class="link">
+              <div class="project-github"><img src="https://i.imgur.com/5Br69Fw.png" height="20px" width="20px"></div>
+              <div class="project-link"><img src="https://i.imgur.com/65dfFeA.png" height="20px" width="20px"></div>
+            </div>
+          </div>
+          <div class="card-bottom">
+            <div class="project-desc">
+              <div class="project-title">Built With Vue</div>
+              <div class="project-summary">Website that's let users showcase their work built in Vue.</div>
+            </div>
+            <ul class="project-tech">
+              <li class="project-skill">Vue</li>
+              <li class="project-skill">Google Sheets</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="card">
+          <div class="card-top">
+            <div class="project-icon"><b></></b></div>
+            <div class="link">
+              <div class="project-github"><img src="https://i.imgur.com/5Br69Fw.png" height="20px" width="20px"></div>
+              <div class="project-link"><img src="https://i.imgur.com/65dfFeA.png" height="20px" width="20px"></div>
+            </div>
+          </div>
+          <div class="card-bottom">
+            <div class="project-desc">
+              <div class="project-title">Built With Vue</div>
+              <div class="project-summary">Website that's let users showcase their work built in Vue.</div>
+            </div>
+            <ul class="project-tech">
+              <li class="project-skill">Vue</li>
+              <li class="project-skill">Google Sheets</li>
+            </ul>
+          </div>
+        </div>
+
+      </div>
     </div>
 
     <div class="panel contact">
       <p class="contact-desc">currently looking for<br>job opportunies and<br>to grow my network.</p>
       <div class="vl"></div>
       <div class="contact-item-container">
-        <div class="contact-item email"><img class="icons" src='https://i.imgur.com/MKQvbcG.png' height="35px" width="35px">me@willbrown.dev</div>
-        <div class="contact-item github"><img class="icons" src='https://i.imgur.com/lZ4FvYt.png' height="35px" width="35px">/WJB3003</div>
-        <div class="contact-item linkedin"><img class="icons" src='https://i.imgur.com/LFCErGR.png' height="35px" width="35px">/williamjamesbrown</div>
+        <div class="contact-item email">
+          <img class="icons" src='https://i.imgur.com/MKQvbcG.png' height="35px" width="35px">
+          <div class="contact-item-text">me@willbrown.dev</div>
+        </div>
+
+        <div class="contact-item github">
+          <img class="icons" src='https://i.imgur.com/lZ4FvYt.png' height="35px" width="35px">
+          <div class="contact-item-text">/WJB3003</div>
+        </div>
+        <div class="contact-item linkedin">
+          <img class="icons" src='https://i.imgur.com/LFCErGR.png' height="35px" width="35px">
+          <div class="contact-item-text">/williamjamesbrown</div>
+        </div>
       </div>
     </div>
 
@@ -127,7 +208,11 @@ body {
 
 .skill-wheel{
   min-width: 40%;
+  margin-top: 97px;
+}
 
+.skill:hover{
+  transform: scale(1.1);
 }
 
 .about-container{
@@ -136,6 +221,7 @@ body {
 }
 
 .work{
+  min-height: 100vh;
   background-color: #0A192F;
   color: white;
 }
@@ -155,22 +241,27 @@ body {
 }
 
 .contact-desc{
-  font-size: 45px;
+  font-size: 55px;
   min-width: 75%;
   text-align: center;
-  padding-top: 30vh;
+  padding-top: 32vh;
 }
 
 .contact-item-container{
   display: inline-block;
   margin-left: 5%;
-  padding-top: 35vh;
+  padding-top: 40vh;
 }
 
 .contact-item{
   font-size: 20px;
   min-height: 35px;
-  vertical-align: middle;
+  display: flex;
+  margin-bottom: 10px;
+}
+
+.contact-item-text{
+  padding: 2px;
 }
 
 .vl{
@@ -220,6 +311,96 @@ p{
 
 .icons{
   padding-right: 15px;
+}
+
+.card{
+  min-width: 220px;
+  min-height: 350px;
+  max-width: 220px;
+  max-height: 350px;
+  background-color: #42B883;
+  border-radius: 10px;
+  padding: 30px;
+  margin-right: 25px;
+  margin-top: 80px;
+}
+
+.card:hover{
+  position: relative;
+  top: -5px;
+}
+
+.cards{
+  display: flex;
+  margin-left: 18%;
+}
+
+.project-skill{
+  list-style-type: none;
+  padding-right: 10px;
+}
+
+.project-title{
+  font-size: 25px;
+  margin-bottom: 5px;
+}
+
+.project-tech{
+  display: flex;
+  margin: 0;
+  padding: 0;
+}
+
+.card-top{
+  display: flex;
+  justify-content: space-between;
+}
+
+.card-bottom{
+  min-height: 300px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.link{
+  display: flex;
+  padding-top: 5px;
+}
+
+.project-link{
+  padding-left: 10px;
+}
+
+.project-icon{
+  font-weight: bolder;
+  font-size: 20px;
+}
+
+.skill{
+  background-color: white;
+  color: black;
+  font-size: 25px;
+  width: 175px;
+  text-align: center;
+  border-radius: 7px;
+  margin-bottom: 15px;
+}
+
+.one{
+  margin-left: 30%;
+}
+
+.two{
+  margin-left: 22%;
+}
+
+.three{
+  margin-left: 18%;
+}
+
+.four{
+  margin-left: 16.5%;
 }
 
 </style>
