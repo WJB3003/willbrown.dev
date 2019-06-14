@@ -198,14 +198,15 @@ body {
 
 .about-summary{
   font-size: 35px;
-  padding-top: 13vh;
   min-width: 60%;
+  min-height: 80%;
+  padding-top: 6%;
   text-align: center;
 }
 
 .skill-wheel{
   min-width: 40%;
-  margin-top: 97px;
+  margin-top: 7%;
 }
 
 .skill:hover{
@@ -330,6 +331,7 @@ p{
 
 .cards{
   display: flex;
+  min-width: 82%;
   margin-left: 18%;
 }
 
