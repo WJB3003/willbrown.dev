@@ -13,7 +13,7 @@
       <div class="panel home">
         <h1 id="title">WILLIAM BROWN</h1>
         <div id="divider"></div>
-        <h2 id="occupation">Software Developer</h2>
+        <h2 id="occupation">Software Developer.</h2>
       </div>
 
       <div class="panel" id="about">
@@ -191,7 +191,7 @@ body {
 
 .about-title{
   font-size: 75px;
-  padding-top: 15px;
+  padding-top: 20px;
   margin-left: 5%;
   min-height: 17vh;
 }
@@ -287,7 +287,7 @@ p{
 
 #title{
   font-size: 85px;
-  padding-top: 15%;
+  padding-top: 30vh;
 }
 
 #occupation{
@@ -297,7 +297,7 @@ p{
 #work-title{
   font-size: 75px;
   text-align: center;
-  padding-top: 15px;
+  padding-top: 30px;
 }
 
 #divider{
