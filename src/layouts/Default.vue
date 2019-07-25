@@ -20,7 +20,7 @@
         <h1 class="about-title">ABOUT ME</h1>
         <div class="hl-about"></div>
         <div class="about-container">
-          <p class="about-summary">Software Developer who is<br>passionately curious about the<br>unknowns of technology and<br>determined to continuously learn.<br>Critical thinker and problem solver<br>seeking to find the best and most<br>efficient solution for every problem.</p>
+          <p class="about-summary">Software Developer who is<br>passionate about the<br>unknowns of technology and<br>determined to continuously learn.<br>Critical thinker and problem solver<br>seeking to find the best and most<br>efficient solution for every problem.</p>
           <div class="skill-wheel">
             <div class="skill one">Java</div>
             <div class="skill two">Javascript</div>
@@ -76,7 +76,7 @@
           </div>
         </div>
 
-        <div class="card">
+        <div class="card last-card">
           <div class="card-top">
             <div class="project-icon"><b></></b></div>
             <div class="link">
@@ -200,7 +200,7 @@ body {
   font-size: 35px;
   min-width: 60%;
   min-height: 80%;
-  padding-top: 6%;
+  margin-top: 7%;
   text-align: center;
 }
 
@@ -283,7 +283,10 @@ p{
 
 .half-face-background{
   background-image: url(https://i.imgur.com/PZaRMLD.jpg);
-  background-size: 100% 200vh;
+  height: 200vh;
+  width: 100vw;
+  background-size: cover;
+  background-position-x: right;
 }
 
 #title{
@@ -329,10 +332,13 @@ p{
   top: -5px;
 }
 
+.last-card{
+  margin-right: 0px;
+}
+
 .cards{
   display: flex;
-  min-width: 82%;
-  margin-left: 18%;
+  justify-content: center;
 }
 
 .project-skill{
