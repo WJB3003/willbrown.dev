@@ -21,15 +21,25 @@
         <div class="hl-about"></div>
         <div class="about-container">
           <p class="about-summary">Software Developer who is<br>passionate about the<br>unknowns of technology and<br>determined to continuously learn.<br>Critical thinker and problem solver<br>seeking to find the best and most<br>efficient solution for every problem.</p>
-          <div class="skill-wheel">
-            <div class="skill one">Java</div>
-            <div class="skill two">Javascript</div>
-            <div class="skill three">Vue</div>
-            <div class="skill four">React</div>
-            <div class="skill three">Angular</div>
-            <div class="skill two">HTML</div>
-            <div class="skill one">CSS</div>
-          </div>
+          <div class="skills-container">
+            <div class="skills">
+              <div class="skill-row">
+                <div class="skill"></div>
+                <div class="skill"></div>
+                <div class="skill"></div>
+              </div>
+              <div class="skill-row">
+                <div class="skill"></div>
+                <div class="skill"></div>
+                <div class="skill"></div>
+              </div>
+              <div class="skill-row">
+                <div class="skill"></div>
+                <div class="skill"></div>
+                <div class="skill"></div>
+              </div>
+            </div>
+          <div>
         </div>
       </div>
     </div>
@@ -207,19 +217,37 @@ body {
   display: flex;
 }
 
-.skill-wheel{
-  min-width: 40%;
-  margin-top: 7%;
-}
-
-.skill:hover{
-  transform: scale(1.1);
-}
-
 .about-container{
   display: flex;
   min-height: 73vh;
   height: calc(100vh - 132px);
+}
+
+.skills-container {
+  min-width: 40%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.skills{
+  display: block;
+}
+
+.skill{
+  width: 100px;
+  height: 100px;
+  background-color: green;
+  margin-right: 10px;
+}
+
+.skill:hover{
+  background-color: gray;
+}
+
+.skill-row{
+  display: flex;
+  margin-top: 10px;
 }
 
 #work{
@@ -255,11 +283,11 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
+  min-width: 24%;
 }
 
 .contact-items{
   display: inline-block;
-  width: 25%;
 }
 
 .contact-item{
@@ -394,16 +422,6 @@ p{
 .project-icon{
   font-weight: bolder;
   font-size: 20px;
-}
-
-.skill{
-  background-color: white;
-  color: black;
-  font-size: 25px;
-  width: 175px;
-  text-align: center;
-  border-radius: 7px;
-  margin-bottom: 15px;
 }
 
 .one{
