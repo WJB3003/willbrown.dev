@@ -193,15 +193,16 @@ body {
   font-size: 75px;
   padding-top: 20px;
   margin-left: 5%;
-  min-height: 17vh;
 }
 
 .about-summary{
   font-size: 35px;
   min-width: 60%;
   min-height: 80%;
-  margin-top: 7%;
   text-align: center;
+  align-items: center;
+  justify-content: center;
+  display: flex;
 }
 
 .skill-wheel{
@@ -216,6 +217,7 @@ body {
 .about-container{
   display: flex;
   min-height: 73vh;
+  height: calc(100vh - 132px);
 }
 
 #work{
@@ -339,6 +341,8 @@ p{
 .cards{
   display: flex;
   justify-content: center;
+  align-items: center;
+  height: calc(100vh - 142px);
 }
 
 .project-skill{
