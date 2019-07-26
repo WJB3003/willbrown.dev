@@ -104,17 +104,19 @@
       <p class="contact-desc">currently looking for<br>job opportunies and<br>to grow my network.</p>
       <div class="vl"></div>
       <div class="contact-item-container">
-        <div class="contact-item email">
-          <a href="#contact"><img class="icons" src='https://i.imgur.com/MKQvbcG.png' height="35px" width="35px"></a>
-          <div class="contact-item-text">me@willbrown.dev</div>
-        </div>
-        <div class="contact-item github">
-          <a href="https://github.com/WJB3003" target="blank"><img class="icons" src='https://i.imgur.com/lZ4FvYt.png' height="35px" width="35px"></a>
-          <div class="contact-item-text">/WJB3003</div>
-        </div>
-        <div class="contact-item linkedin">
-          <a href="https://www.linkedin.com/in/williamjamesbrown/" target="blank"><img class="icons" src='https://i.imgur.com/LFCErGR.png' height="35px" width="35px"></a>
-          <div class="contact-item-text">/williamjamesbrown</div>
+        <div class="contact-items">
+          <div class="contact-item email">
+            <a href="#contact"><img class="icons" src='https://i.imgur.com/MKQvbcG.png' height="35px" width="35px"></a>
+            <div class="contact-item-text">me@willbrown.dev</div>
+          </div>
+          <div class="contact-item github">
+            <a href="https://github.com/WJB3003" target="blank"><img class="icons" src='https://i.imgur.com/lZ4FvYt.png' height="35px" width="35px"></a>
+            <div class="contact-item-text">/WJB3003</div>
+          </div>
+          <div class="contact-item linkedin">
+            <a href="https://www.linkedin.com/in/williamjamesbrown/" target="blank"><img class="icons" src='https://i.imgur.com/LFCErGR.png' height="35px" width="35px"></a>
+            <div class="contact-item-text">/williamjamesbrown</div>
+          </div>
         </div>
       </div>
     </div>
@@ -244,13 +246,20 @@ body {
   font-size: 55px;
   min-width: 75%;
   text-align: center;
-  padding-top: 32vh;
+  justify-content: center;
+  display: flex;
+  align-items: center;
 }
 
 .contact-item-container{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.contact-items{
   display: inline-block;
-  margin-left: 5%;
-  padding-top: 40vh;
+  width: 25%;
 }
 
 .contact-item{
