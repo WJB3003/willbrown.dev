@@ -17,7 +17,7 @@
       </div>
 
       <div class="panel" id="about">
-        <h1 class="about-title">ABOUT ME</h1>
+        <div class="about-title">ABOUT ME</div>
         <div class="hl-about"></div>
         <div class="about-container">
           <p class="about-summary">Software Developer who is<br>passionate about the<br>unknowns of technology and<br>determined to continuously learn.<br>Critical thinker and problem solver<br>seeking to find the best and most<br>efficient solution for every problem.</p>
@@ -106,7 +106,6 @@
             </ul>
           </div>
         </div>
-
       </div>
     </div>
 
@@ -235,8 +234,8 @@ body {
 }
 
 .skill{
-  width: 100px;
-  height: 100px;
+  width: 110px;
+  height: 110px;
   background-color: green;
   margin-right: 10px;
 }
