@@ -24,19 +24,19 @@
           <div class="skills-container">
             <div class="skills">
               <div class="skill-row">
-                <div class="skill"></div>
-                <div class="skill"></div>
-                <div class="skill"></div>
+                <i class="fab fa-java skill"></i>
+                <i class="fab fa-js-square skill"></i>
+                <i class="fab fa-python skill"></i>
               </div>
               <div class="skill-row">
-                <div class="skill"></div>
-                <div class="skill"></div>
-                <div class="skill"></div>
+                <i class="fab fa-vuejs skill"></i>
+                <i class="fab fa-angular skill"></i>
+                <i class="fab fa-react skill"></i>
               </div>
               <div class="skill-row">
-                <div class="skill"></div>
-                <div class="skill"></div>
-                <div class="skill"></div>
+                <i class="fab fa-css3-alt skill"></i>
+                <i class="fab fa-git-square skill"></i>
+                <i class="fab fa-html5 skill"></i>
               </div>
             </div>
           <div>
@@ -78,7 +78,7 @@
           <div class="card-bottom">
             <div class="project-desc">
               <div class="project-title">Space X Interface</div>
-              <div class="project-summary">Using the Space X RESTful API, I create a website that visualizes the data. WIP.</div>
+              <div class="project-summary">Using the Space X RESTful API, I am creating a website that visualizes the data. WIP.</div>
             </div>
             <ul class="project-tech">
               <li class="project-skill">Vue</li>
@@ -130,8 +130,17 @@
       </div>
     </div>
 
+    <font-awesome :icon="['fab', 'github']"/>
+
   </div>
 </template>
+
+<script>
+    export default {
+    components: {
+    }
+  }
+</script>
 
 <static-query>
 query {
@@ -234,14 +243,14 @@ body {
 }
 
 .skill{
+  font-size: 110px;
   width: 110px;
   height: 110px;
-  background-color: green;
   margin-right: 10px;
 }
 
 .skill:hover{
-  background-color: gray;
+  color: #42b883;
 }
 
 .skill-row{
