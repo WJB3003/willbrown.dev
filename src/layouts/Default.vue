@@ -243,9 +243,9 @@ body {
 }
 
 .skill{
-  font-size: 110px;
-  width: 110px;
-  height: 110px;
+  font-size: 80px;
+  width: 80px;
+  height: 80px;
   margin-right: 10px;
 }
 
@@ -453,5 +453,11 @@ a{
   text-decoration: none;
   padding: 0px;
   margin: 0px;
+}
+
+@media only screen and (max-width: 500px) {
+  html{
+    display: none;
+  }
 }
 </style>
