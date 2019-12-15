@@ -9,37 +9,23 @@
           <div class="nav-item"><a href="#contact">Contact</a></div>
         </nav>
       </header>
-      
+
       <div class="panel home">
-        <h1 id="title">WILLIAM BROWN</h1>
+        <h1 id="title">{{name}}</h1>
         <div id="divider"></div>
-        <h2 id="occupation">Software Developer.</h2>
+        <h2 id="occupation">{{title}}</h2>
       </div>
 
       <div class="panel" id="about">
         <div class="about-title">ABOUT ME</div>
         <div class="hl-about"></div>
         <div class="about-container">
-          <p class="about-summary">Software Developer who is<br>passionate about the<br>unknowns of technology and<br>determined to continuously learn.<br>Critical thinker and problem solver<br>seeking to find the best and most<br>efficient solution for every problem.</p>
+          <p class="about-summary">{{summary}}</p>
           <div class="skills-container">
-            <div class="skills">
-              <div class="skill-row">
-                <i class="fab fa-java skill"></i>
-                <i class="fab fa-js-square skill"></i>
-                <i class="fab fa-python skill"></i>
-              </div>
-              <div class="skill-row">
-                <i class="fab fa-vuejs skill"></i>
-                <i class="fab fa-angular skill"></i>
-                <i class="fab fa-react skill"></i>
-              </div>
-              <div class="skill-row">
-                <i class="fab fa-css3-alt skill"></i>
-                <i class="fab fa-git-square skill"></i>
-                <i class="fab fa-html5 skill"></i>
-              </div>
+            <div class="skills" v-for="skill in skills">
+              <i :class="skill.fontAwesomeClass"></i>
             </div>
-          <div>
+          </div>
         </div>
       </div>
     </div>
@@ -47,115 +33,59 @@
     <div class="panel" id="work">
       <div id="work-title">WORK</div>
       <div class="hl-work"></div>
-
-      <div class="cards">
-        <div class="card">
-          <div class="card-top">
-            <div class="project-icon"><b></></b></div>
-            <div class="link">
-              <div class="project-link"><a href="https://www.builtwithvue.com/" target="blank"><img src="https://i.imgur.com/65dfFeA.png" height="20px" width="20px"></a></div>
-            </div>
-          </div>
-          <div class="card-bottom">
-            <div class="project-desc">
-              <div class="project-title">Built With Vue</div>
-              <div class="project-summary">Website that's let users showcase their work built in Vue.</div>
-            </div>
-            <ul class="project-tech">
-              <li class="project-skill">Vue</li>
-              <li class="project-skill">Google Sheets</li>
-            </ul>
-          </div>
-        </div>
-
-        <div class="card">
-          <div class="card-top">
-            <div class="project-icon"><b></></b></div>
-            <div class="link">
-              <div class="project-github"><a href="https://github.com/WJB3003/space-x" target="blank"><img src="https://i.imgur.com/5Br69Fw.png" height="20px" width="20px"></a></div>
-            </div>
-          </div>
-          <div class="card-bottom">
-            <div class="project-desc">
-              <div class="project-title">Space X Interface</div>
-              <div class="project-summary">Using the Space X RESTful API, I am creating a website that visualizes the data. WIP.</div>
-            </div>
-            <ul class="project-tech">
-              <li class="project-skill">Vue</li>
-            </ul>
-          </div>
-        </div>
-
-        <div class="card last-card">
-          <div class="card-top">
-            <div class="project-icon"><b></></b></div>
-            <div class="link">
-              <div class="project-github"><a href="https://github.com/WJB3003/Remoteplay-Web" target="blank"><img src="https://i.imgur.com/5Br69Fw.png" height="20px" width="20px"></a></div>
-            </div>
-          </div>
-          <div class="card-bottom">
-            <div class="project-desc">
-              <div class="project-title">Remote Play</div>
-              <div class="project-summary">Web application that combines game logic of Card Against Humanity and the style of JackBox Games into a fun party game. WIP.</div>
-            </div>
-            <ul class="project-tech">
-              <li class="project-skill">Vue</li>
-              <li class="project-skill">Java</li>
-              <li class="project-skill">Spring Boot</li>
-              <li class="project-skill">REST</li>
-            </ul>
-          </div>
-        </div>
-      </div>
+      <ul class="cards">
+        <li v-for="project in projects">
+          <Card :project='project'/>
+        </li>
+      </ul>
     </div>
 
     <div class="panel" id="contact">
-      <p class="contact-desc">currently looking for<br>job opportunies and<br>to grow my network.</p>
+      <p class="contact-desc">{{status}}</p>
       <div class="vl"></div>
       <div class="contact-item-container">
-        <div class="contact-items">
-          <div class="contact-item email">
-            <a href="#contact"><img class="icons" src='https://i.imgur.com/MKQvbcG.png' height="35px" width="35px"></a>
-            <div class="contact-item-text">me@willbrown.dev</div>
-          </div>
-          <div class="contact-item github">
-            <a href="https://github.com/WJB3003" target="blank"><img class="icons" src='https://i.imgur.com/lZ4FvYt.png' height="35px" width="35px"></a>
-            <div class="contact-item-text">/WJB3003</div>
-          </div>
-          <div class="contact-item linkedin">
-            <a href="https://www.linkedin.com/in/williamjamesbrown/" target="blank"><img class="icons" src='https://i.imgur.com/LFCErGR.png' height="35px" width="35px"></a>
-            <div class="contact-item-text">/williamjamesbrown</div>
+        <div class="contact-items" >
+          <div v-for="option in contactOptions">
+            <a class="contact-item" :href="option.link" target="_blank">
+              <img class="icons" :src="option.img" height="35px">
+              <div class="contact-item-text">{{option.content}}</div>
+            </a>
           </div>
         </div>
       </div>
     </div>
-
-    <font-awesome :icon="['fab', 'github']"/>
 
   </div>
 </template>
 
 <script>
-    export default {
+  import json from '../../static/information.json';
+  import Card from '../components/Card';
+
+  export default {
+    data() {
+      return {
+        name: json.name,
+        title: json.title,
+        summary: json.summary,
+        projects: json.projects,
+        status: json.contact.status,
+        contactOptions: json.contact.options,
+        skills: json.skills
+      }
+    },
     components: {
+      Card
     }
   }
 </script>
-
-<static-query>
-query {
-  metaData {
-    siteName
-  }
-}
-</static-query>
 
 <style>
 body {
   font-family: -apple-system,system-ui,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif;
   margin:0;
   padding:0;
-  line-height: 1.5;
+  line-height: 1.3;
 }
 
 .layout{
@@ -193,7 +123,7 @@ body {
 .home{
   min-height: calc(100vh - 62px);
   color: #35495E;
-  padding-left: 3%;
+  margin-left: 5%;
 }
 
 #about{
@@ -211,14 +141,13 @@ body {
 
 .about-title{
   font-size: 75px;
-  padding-top: 20px;
+  padding: 20px 0 0 20px;
   margin-left: 5%;
 }
 
 .about-summary{
   font-size: 35px;
-  min-width: 60%;
-  min-height: 80%;
+  padding: 0 150px 0 150px;
   text-align: center;
   align-items: center;
   justify-content: center;
@@ -232,8 +161,10 @@ body {
 }
 
 .skills-container {
-  min-width: 40%;
+  max-width: 270px;
   display: flex;
+  flex-basis: 150%;
+  flex-wrap: wrap;
   align-items: center;
   justify-content: center;
 }
@@ -331,14 +262,13 @@ p{
 .half-face-background{
   background-image: url(https://i.imgur.com/PZaRMLD.jpg);
   height: 200vh;
-  width: 100vw;
   background-size: cover;
   background-position-x: right;
 }
 
 #title{
   font-size: 85px;
-  padding-top: 30vh;
+  padding-top: 11%;
 }
 
 #occupation{
@@ -369,9 +299,7 @@ p{
   background-color: #42B883;
   border-radius: 10px;
   padding: 30px;
-  margin-right: 25px;
-  margin-top: 80px;
-  margin-bottom: 80px;
+  margin: 80px 25px 80px;
 }
 
 .card:hover{
@@ -379,11 +307,9 @@ p{
   top: -5px;
 }
 
-.last-card{
-  margin-right: 0px;
-}
-
 .cards{
+  margin: 0;
+  list-style-type: none;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -402,7 +328,7 @@ p{
 
 .project-tech{
   display: flex;
-  margin: 0;
+  flex-wrap: wrap;
   padding: 0;
 }
 
@@ -412,7 +338,7 @@ p{
 }
 
 .card-bottom{
-  min-height: 300px;
+  margin-bottom: 100px;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -430,22 +356,6 @@ p{
 .project-icon{
   font-weight: bolder;
   font-size: 20px;
-}
-
-.one{
-  margin-left: 30%;
-}
-
-.two{
-  margin-left: 22%;
-}
-
-.three{
-  margin-left: 18%;
-}
-
-.four{
-  margin-left: 16.5%;
 }
 
 a{

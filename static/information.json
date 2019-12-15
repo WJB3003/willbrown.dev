@@ -1,0 +1,97 @@
+{
+  "name": "WILLIAM BROWN",
+  "title": "Software Developer.",
+  "summary": "Software Developer who is passionate about the unknowns of technology and determined to continuously learn. Critical thinker and problem solver seeking to find the best and most efficient solution for every problem.",
+  "projects": [
+    {
+      "title": "Built With Vue",
+      "icons": [
+        {
+          "type": "link",
+          "img": "https://i.imgur.com/65dfFeA.png",
+          "link": "https://www.builtwithvue.com/"
+        },
+        {
+          "type": "github",
+          "img": "https://i.imgur.com/5Br69Fw.png",
+          "link": "https://www.github.com/WJB3003/builtwithvue"
+        }
+      ],
+      "summary": "Website that's let users showcase their work built in Vue.",
+      "technologies": [
+        "TypeScript",
+        "Vue",
+        "Google Sheets",
+        "VS Code",
+        "Java"
+      ]
+    },
+    {
+      "title": "Space X Interface",
+      "icons": [
+        {
+          "img": "https://i.imgur.com/5Br69Fw.png",
+          "link": "https://www.github.com/WJB3003/space-x"
+        }
+      ],
+      "summary": "Using the Space X RESTful API, I am creating a website that visualizes the data. WIP.",
+      "technologies": [
+        "JavaScript",
+        "Vue"
+      ]
+    }
+  ],
+  "contact": {
+    "status": "currently looking for job opportunies and to grow my network.",
+    "options": [
+      {
+        "type": "email",
+        "content": "me@willbrown.dev",
+        "img": "https://i.imgur.com/MKQvbcG.png",
+        "link": "me@willbrown.dev"
+      },
+      {
+        "type": "github",
+        "content": "/WJB3003",
+        "img": "https://i.imgur.com/lZ4FvYt.png",
+        "link": "https://github.com/WJB3003"
+      },
+      {
+        "type": "linkedIn",
+        "content": "/williamjamesbrown",
+        "img": "https://i.imgur.com/LFCErGR.png",
+        "link": "https://www.linkedin.com/in/williamjamesbrown/"
+      }
+    ]
+  },
+  "skills": [
+    {
+      "skill": "JavaScript",
+      "fontAwesomeClass": "fab fa-js-square skill"
+    },
+    {
+      "skill": "React",
+      "fontAwesomeClass": "fab fa-react skill"
+    },
+    {
+      "skill": "Java",
+      "fontAwesomeClass": "fab fa-java skill"
+    },
+    {
+      "skill": "VueJS",
+      "fontAwesomeClass": "fab fa-vuejs skill"
+    },
+    {
+      "skill": "CSS3",
+      "fontAwesomeClass": "fab fa-css3-alt skill"
+    },
+    {
+      "skill": "Git",
+      "fontAwesomeClass": "fab fa-git-square skill"
+    },
+    {
+      "skill": "HTML5",
+      "fontAwesomeClass": "fab fa-html5 skill"
+    }
+  ]
+}
