@@ -27,6 +27,98 @@
       ]
     },
     {
+      "title": "Built With Vue",
+      "icons": [
+        {
+          "type": "link",
+          "img": "https://i.imgur.com/65dfFeA.png",
+          "link": "https://www.builtwithvue.com/"
+        },
+        {
+          "type": "github",
+          "img": "https://i.imgur.com/5Br69Fw.png",
+          "link": "https://www.github.com/WJB3003/builtwithvue"
+        }
+      ],
+      "summary": "Website that's let users showcase their work built in Vue.",
+      "technologies": [
+        "TypeScript",
+        "Vue",
+        "Google Sheets",
+        "VS Code",
+        "Java"
+      ]
+    },
+    {
+      "title": "Built With Vue",
+      "icons": [
+        {
+          "type": "link",
+          "img": "https://i.imgur.com/65dfFeA.png",
+          "link": "https://www.builtwithvue.com/"
+        },
+        {
+          "type": "github",
+          "img": "https://i.imgur.com/5Br69Fw.png",
+          "link": "https://www.github.com/WJB3003/builtwithvue"
+        }
+      ],
+      "summary": "Website that's let users showcase their work built in Vue.",
+      "technologies": [
+        "TypeScript",
+        "Vue",
+        "Google Sheets",
+        "VS Code",
+        "Java"
+      ]
+    },
+    {
+      "title": "Built With Vue",
+      "icons": [
+        {
+          "type": "link",
+          "img": "https://i.imgur.com/65dfFeA.png",
+          "link": "https://www.builtwithvue.com/"
+        },
+        {
+          "type": "github",
+          "img": "https://i.imgur.com/5Br69Fw.png",
+          "link": "https://www.github.com/WJB3003/builtwithvue"
+        }
+      ],
+      "summary": "Website that's let users showcase their work built in Vue.",
+      "technologies": [
+        "TypeScript",
+        "Vue",
+        "Google Sheets",
+        "VS Code",
+        "Java"
+      ]
+    },
+    {
+      "title": "Built With Vue",
+      "icons": [
+        {
+          "type": "link",
+          "img": "https://i.imgur.com/65dfFeA.png",
+          "link": "https://www.builtwithvue.com/"
+        },
+        {
+          "type": "github",
+          "img": "https://i.imgur.com/5Br69Fw.png",
+          "link": "https://www.github.com/WJB3003/builtwithvue"
+        }
+      ],
+      "summary": "Website that's let users showcase their work built in Vue.",
+      "technologies": [
+        "TypeScript",
+        "Vue",
+        "Google Sheets",
+        "VS Code",
+        "Java"
+      ]
+    },
+    {
       "title": "Space X Interface",
       "icons": [
         {
