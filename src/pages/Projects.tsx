@@ -10,12 +10,10 @@ import { faGithub } from "@fortawesome/free-brands-svg-icons";
 import { faPlay } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { FC } from "react";
-import { useNavigate } from "react-router-dom";
 
 interface ProjectsProps {}
 
 const Projects: FC<ProjectsProps> = () => {
-  const navigate = useNavigate();
   const projects = [
     {
       title: "william.travel",
